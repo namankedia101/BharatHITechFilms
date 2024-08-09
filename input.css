@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+.home-bg-class {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+.about-bg-class {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/about.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 84vh;
+  width: 100vw;
+}
+
+.qlty-bg-class {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/quality.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 84vh;
+  width: 100vw;
+}
+
+.contact-bg-class {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/contact.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 84vh;
+  width: 100vw;
+}
+
+.shop-bg-class {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/product.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+.footer-bg-class {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./assets/images/blue-digital-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sticky-nav {
+  animation: sticky-nav 300ms;
+}
+
+.slick-prev,
+.slick-next {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.prod-img {
+  width: 100%;
+  height: 18rem;
+  background-color: lightgray;
+  background-blend-mode: multiply;
+  background-size: 100% 100%; /* Make the image cover the div without aspect ratio */
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+}
+
+.prod-det-img {
+  background-color: white;
+  background-blend-mode: multiply;
+  background-size: cover; /* Make the image cover the div without aspect ratio */
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+}
+
+@keyframes sticky-nav {
+  0% {
+    transform: translateY(-6em);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+[x-cloak] {
+  display: none;
+}
